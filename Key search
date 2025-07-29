@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+int main() {
+ int arr[5];
+ int x;
+ int Key;
+ cout<<"Enter numbers to enter in array\n"<<endl;
+ for(int i=0;i<5;i++){
+     cin>>arr[i];
+ }
+ cout<<"\nEnter key to search:\n"<<endl;
+ cin>>Key;
+ cout<<"\n";
+     for(int j=0;j<5;j++)
+     if(arr[j]==Key){
+         cout<<"Key found at location: "<<(j+1)<<"\n\n"<<"Adress:"<<&arr[j];
+     }
+return 0;
+}
+
+//Output:
+//Enter numbers to enter in array
+
+1
+2
+3
+4
+5
+
+Enter key to search:
+
+4
+
+Key found at location: 4
+
+Adress:0x7ffe40ca545c
+
+=== Code Execution Successful ===
