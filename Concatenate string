@@ -1,0 +1,23 @@
+#include <iostream>
+#include <string>
+using namespace std;
+int main() {
+string str,str1,str2;
+cout<<"Enter name:\n";
+cin>>str1;
+cout<<"Enter surname:\n";
+cin>>str2;
+str=str1+" "+str2;
+cout<<"Your full name is:\n"<<str<<endl;
+    return 0;
+}
+//Output:
+//Enter name:
+Madhav
+Enter surname:
+Menaria
+Your full name is:
+Madhav Menaria
+
+
+=== Code Execution Successful ===
