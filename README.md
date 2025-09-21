@@ -1,121 +1,136 @@
-Array-and-String
-AIM : Usage of array and string in c++
+# Array and String in C++
 
-SOFTWARE USED : VS CODE
+**AIM:**
+To study and implement the usage of arrays and strings in C++.
 
-ARRAYS IN C++
-Definition:
+**SOFTWARE USED:**
+Visual Studio Code (VS Code)
+
+---
+
+## ARRAYS IN C++
+
+**Definition:**
 An array is a data structure that stores multiple values of the same data type in contiguous memory locations.
 
-🔹 Key Points
-Stores homogeneous data (all elements of the same type)
-Fixed size – must be known at compile time
-Elements are accessed by an index (starting from 0 to size - 1)
-Allows random access to any element using its index
-🔹 Types of Arrays
-One-Dimensional → Linear data storage
-Two-Dimensional → Matrix-like structure
-Multi-Dimensional → Higher-order structures
-🔹 Advantages
-Fast access and modification
-Simple to use for fixed-size data storage
-🔹 Limitations
-Fixed size can lead to wasted memory or insufficient space
-No bounds checking → Accessing out-of-range elements causes undefined behavior
-🔹 Common Operations
-Traversal – Visiting each element
-Insertion – Adding elements at specific positions
-Deletion – Removing elements
-Searching – Finding an element (linear/binary search)
-Sorting – Arranging in ascending/descending order
-🔹 Usage in Advanced Structures
-Matrices
-Vectors
-Stacks & Queues
-STRINGS IN C++
-Definition:
+### 🔹 Key Points
+
+* Stores **homogeneous data** (all elements of the same type)
+* **Fixed size** → must be declared at compile time
+* Elements are accessed using an **index (0 to n-1)**
+* Provides **random access**
+
+### 🔹 Types of Arrays
+
+* **One-Dimensional** → Linear data storage
+* **Two-Dimensional** → Matrix-like storage
+* **Multi-Dimensional** → Higher-order structures
+
+### 🔹 Advantages
+
+* Fast access and modification
+* Easy to implement for fixed-size problems
+
+### 🔹 Limitations
+
+* Fixed size (no resizing possible at runtime)
+* No bounds checking (out-of-range access leads to errors)
+
+### 🔹 Common Operations
+
+* Traversal
+* Insertion
+* Deletion
+* Searching (linear/binary)
+* Sorting (ascending/descending)
+
+### 🔹 Usage in Advanced Structures
+
+* Matrices
+* Vectors
+* Stacks & Queues
+
+---
+
+## STRINGS IN C++
+
+**Definition:**
 A string is a sequence of characters used to represent textual data.
 
-🔹 Types of Strings in C++
-1️⃣ C-Style Strings (Character Arrays)
-Implemented as an array of characters ending with a null character \0
-Functions from the C library handle operations (strlen, strcpy, strcmp, etc.)
-Require manual size management
-Less safe compared to modern C++ strings
-2️⃣ string Class (STL)
-Part of the Standard Template Library
-Supports dynamic resizing and automatic memory management
-Provides built-in functions for:
-Concatenation (+)
-Comparison (==)
-Substring extraction (substr())
-Character access (at() / [])
-Supports operator overloading for intuitive usage
-Works easily with cin and cout
-🔹 Advantages of string Class
-No manual memory management
-Flexible and safer than C-style strings
-Improves readability and maintainability
-📝 ALGORITHMS
-1️⃣ Reverse the Array
-Algorithm:
+### 🔹 Types of Strings in C++
 
-Step 1: Start
-Step 2: Declare arr[50], num, temp
-Step 3: Input number of elements → num
-Step 4: Input num elements into arr
-Step 5: Print the original array
-Step 6: Set i = 0, j = num - 1
-Step 7: While i < j:
-  a. Swap arr[i] and arr[j] using temp
-  b. Increment i and decrement j
-Step 8: Print the reversed array
-Step 9: Stop
+1. **C-Style Strings (Character Arrays)**
 
-2️⃣ Sum and Average of Array
-Algorithm:
+   * Implemented as an array of characters ending with `\0`
+   * Functions: `strlen()`, `strcpy()`, `strcmp()`
+   * Requires manual size management
 
-Step 1: Start
-Step 2: Declare arr[100], sum = 0, average
-Step 3: Input number of elements → n
-Step 4: Input n elements into arr
-Step 5: For i = 0 to n - 1:
-  a. sum = sum + arr[i]
-Step 6: Calculate average = sum / n
-Step 7: Print sum and average
-Step 8: Stop
+2. **`string` Class (STL)**
 
-3️⃣ Reverse a String
-Algorithm:
+   * Part of Standard Template Library
+   * Dynamic sizing, automatic memory management
+   * Built-in functions:
 
-Step 1: Start
-Step 2: Declare two string variables: str and reversed
-Step 3: Input a string into str
-Step 4: Find the length of str → n
-Step 5: For i = n - 1 down to 0:
-  a. Append str[i] to reversed
-Step 6: Print reversed
-Step 7: End
+     * Concatenation (`+`)
+     * Comparison (`==`)
+     * Substring extraction (`substr()`)
+     * Character access (`[]`, `.at()`)
 
-4️⃣ Check Palindrome String
-Algorithm:
+### 🔹 Advantages of `string` Class
 
-Step 1: Start
-Step 2: Declare a string str and integer count = 0
-Step 3: Input a string into str
-Step 4: Find the length of str → n
-Step 5: For i = 0 to n / 2:
-  a. If str[i] != str[n - 1 - i]:
-    i. Set count = 1
-    ii. Break the loop
-Step 6: If count == 0:
-  a. Print "String is a palindrome"
-  Else:
-  b. Print "String is not a palindrome"
-Step 7: End
+* No manual memory handling
+* Safer and more flexible than C-style strings
+* Easy to use with `cin` and `cout`
 
-📌 Conclusion
-These algorithms demonstrate the fundamental operations on arrays and strings in C++.
+---
 
-Array algorithms like reversing and finding sum/average help in mastering traversal, indexing, and basic manipulation.
-String algorithms like reversing and palindrome checking strengthen understanding of character indexing and conditional logic.
+## ALGORITHMS
+
+### 1️⃣ Reverse the Array
+
+**Steps:**
+
+* Input array
+* Swap elements from start and end moving inward
+* Print reversed array
+
+---
+
+### 2️⃣ Sum and Average of Array
+
+**Steps:**
+
+* Input array
+* Accumulate sum using loop
+* Divide by total elements to get average
+
+---
+
+### 3️⃣ Reverse a String
+
+**Steps:**
+
+* Input string
+* Traverse from end to beginning
+* Build reversed string and display
+
+---
+
+### 4️⃣ Check Palindrome String
+
+**Steps:**
+
+* Input string
+* Compare characters from both ends
+* If mismatch found → Not palindrome
+* Else → Palindrome
+
+---
+
+## 📌 CONCLUSION
+
+* Arrays in C++ allow **efficient storage and manipulation** of fixed-size, homogeneous data.
+* Strings provide **text handling**, with STL `string` class offering a **safer and more flexible approach**.
+* Implementing operations like **reversing, summation, average, and palindrome checking** strengthens the understanding of **loops, indexing, and conditional logic** in C++.
+
+---
